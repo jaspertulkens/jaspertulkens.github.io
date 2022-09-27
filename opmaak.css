@@ -10,7 +10,7 @@ li{
     float: left;
 }
 
-/* change the link color to #111 (black) on hover */
+/* change the link color to #333 (black) on hover */
 li a: hover {
     background-color: #333;
 }
