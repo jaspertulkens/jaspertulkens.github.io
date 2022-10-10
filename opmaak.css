@@ -18,3 +18,13 @@ li a: hover {
 body {
     background-color: #111;
 }
+
+h1 {
+    color:ghostwhite;
+    text-align: left;
+}
+
+h2 {
+    color: ghostwhite;
+    text-align: left;
+}
