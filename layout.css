@@ -1,58 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.dropbtn {
-  background-color: aqua;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+.second-level-menu > li
+{
+    position: relative;
+    height: 30px;
+    background: aqua;
+}
+.second-level-menu > li:hover { background: aqua; }
+
+.top-level-menu
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+.top-level-menu > li
+{
+    position: relative;
+    float: left;
+    height: 30px;
+    width: 150px;
+    background: aqua;
+}
+.top-level-menu > li:hover { background: aqua; }
+
+.top-level-menu li:hover > ul
+{
+    display: inline;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: aqua;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+
+
+
+.top-level-menu a
+{
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+
+    display: block;
+    line-height: 30px;
 }
-
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: black;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: aqua;}
-</style>
-</head>
-<body style="background-color:bique;">
-
-<h2>Hoverable Dropdown</h2>
-<p>Move the mouse over the button to open the dropdown menu.</p>
-
-<div class="dropdown">
-  <button class="dropbtn">3-lagenmodel</button>
-  <div class="dropdown-content">
-    <a href="#">Algemeen</a>
-    <a href="#">Hardware</a>
-    <a href="#">Logische laag</a>
-    <a href="#">Toepassingen</a>
-  </div>
-</div>
-
-</body>
-</html>
+.top-level-menu a:hover { color: aqua; }
