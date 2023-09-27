@@ -14,6 +14,7 @@
         ul > li {
             display: inline;
             margin-right: 10px;
+            position: relative;
         }
 
         ul > li > a {
@@ -24,7 +25,7 @@
         ul ul {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
+            background-color: aqua; /* Set background color to aqua */
             padding: 0;
         }
 
@@ -34,6 +35,18 @@
 
         ul ul li {
             display: block;
+        }
+
+        /* Style submenu items */
+        ul ul li a {
+            padding: 5px 10px;
+            display: block;
+            color: white; /* Set text color to white */
+        }
+
+        /* Change text color on hover */
+        ul ul li a:hover {
+            background-color: black; /* Set background color to black on hover */
         }
     </style>
 </head>
