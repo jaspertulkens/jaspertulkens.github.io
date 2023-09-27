@@ -1,26 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Binair stelsel</title>
-        <link rel="stylesheet" type="text/css" href="opmaak.css">
-        <meta charset="utf-8">
-        
-    </head>
-    <body>
-        <br>
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="binairstelsel.html">binairstelsel</a></li>
-            <li><a href="kleurmodel.html">kleurmodel</a></li>
-            <li><a href="/html/3-lagenmodel.html">3-lagenmodel</a></li>
-        </ul>
+<head>
+    <title>Binair stelsel</title>
+    <link rel="stylesheet" type="text/css" href="opmaak.css">
+    <meta charset="utf-8">
+    <style>
+        /* Style the top-level menu items */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
 
-       <p>Het binair stelsel is ingewikkeld, maar het is makkelijk als je het begrijpt.
+        ul > li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        ul > li > a {
+            text-decoration: none;
+        }
+
+        /* Style the submenu */
+        ul ul {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            padding: 0;
+        }
+
+        ul li:hover ul {
+            display: block;
+        }
+
+        ul ul li {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="binairstelsel.html">binairstelsel</a></li>
+        <li><a href="kleurmodel.html">kleurmodel</a></li>
+        <li><a href="#">3-lagenmodel</a>
+            <ul>
+                <li><a href="#">Submenu Item 1</a></li>
+                <li><a href="#">Submenu Item 2</a></li>
+                <li><a href="#">Submenu Item 3</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Het binair stelsel is ingewikkeld, maar het is makkelijk als je het begrijpt.
         <br> Je hebt allemaal cijfers die de hele tijd blijven verdubbelen. Je kan de cijfers
         <br> bij elkaar optellen, de manier om dat te doen is de cijfers aan en uit te doen met nullen en enen.
         <br> 1 is dan aan en 0 is natuurlijk uit.
-       </p> 
+    </p> 
 
-        <img src="binairstelsel.jpg">
-    </body>
+    <img src="binairstelsel.jpg">
+</body>
 </html>
