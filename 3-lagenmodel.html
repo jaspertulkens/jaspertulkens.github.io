@@ -1,29 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>3-lagenmodel</title>
-        <link rel="stylesheet" type="text/css" href="layout.css">
-        <link rel="stylesheet" type="text/css" href="opmaak.css">
-        <meta charset="utf-8">
-        
-    </head>
-    <body>
-        <br>
-        <ul class="top-level-menu">
-            <li><a href="index.html">home</a></li>
-            <li><a href="binairstelsel.html">binairstelsel</a></li>
-            <li><a href="kleurmodel.html">kleurmodel</a></li>
-            <li><a href="3-lagenmodel.html">3-lagenmodel</a></li>
-        </ul>
+<head>
+    <title>3-lagenmodel</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <link rel="stylesheet" type="text/css" href="opmaak.css">
+    <meta charset="utf-8">
+    <style>
+        /* Style the top-level menu items */
+        ul.top-level-menu {
+            list-style: none;
+            padding: 0;
+        }
 
-        <p>
-            Het 3-lagenmodel is niet zo moeilijk, in dit geval gaan we het hebben over het 3-lagenmodel van een telefoon.
-            <br> Dit zijn de 3 lagen van je telefoon:
-            <br> Hardware: camera, GPS, batterij, touchscreen en geheugen
-            <br> logische laag van software: Android, iOS
-            <br> toepassingslaag van software: Apps
-        </p>
+        ul.top-level-menu > li {
+            position: relative;
+            float: left;
+            height: 30px;
+            width: 150px;
+            background: aqua; /* Set background color to aqua */
+        }
 
-        <img src="3-lagenmodel.jpg" width="800" height="450">
-    </body>
+        ul.top-level-menu > li:hover {
+            background: aqua; /* Set background color to aqua on hover */
+        }
+
+        ul.top-level-menu li:hover > ul {
+            display: inline;
+        }
+
+        ul.top-level-menu a {
+            font: bold 14px Arial, Helvetica, sans-serif;
+            color: black;
+            text-decoration: none;
+            padding: 0 0 0 10px;
+            display: block;
+            line-height: 30px;
+        }
+
+        ul.top-level-menu a:hover {
+            color: white; /* Set text color to white on hover */
+        }
+
+        /* Style the submenu */
+        ul.second-level-menu {
+            display: none;
+            position: absolute;
+            background-color: aqua; /* Set background color to aqua */
+            padding: 0;
+        }
+
+        ul.top-level-menu li:hover > ul.second-level-menu {
+            display: block;
+        }
+
+        ul.second-level-menu > li {
+            position: relative;
+            height: 30px;
+            background: aqua; /* Set background color to aqua */
+        }
+
+        ul.second-level-menu > li:hover {
+            background: black; /* Set background color to black on hover */
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <ul class="top-level-menu">
+        <li><a href="index.html">home</a></li>
+        <li><a href="binairstelsel.html">binairstelsel</a></li>
+        <li><a href="kleurmodel.html">kleurmodel</a></li>
+        <li>
+            <a href="#">3-lagenmodel</a>
+            <ul class="second-level-menu">
+                <li><a href="#">Toepassingenlaag</a></li>
+                <li><a href="#">Logische laag</a></li>
+                <li><a href="#">Fysieke laag</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>
+        Het 3-lagenmodel is niet zo moeilijk, in dit geval gaan we het hebben over het 3-lagenmodel van een telefoon.
+        <br> Dit zijn de 3 lagen van je telefoon:
+        <br> Hardware: camera, GPS, batterij, touchscreen en geheugen
+        <br> Logische laag van software: Android, iOS
+        <br> Toepassingslaag van software: Apps
+    </p>
+
+    <img src="3-lagenmodel.jpg" width="800" height="450">
+</body>
 </html>
