@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Jasperswerkplaats</title>
-        <link rel="stylesheet" type="text/css" href="opmaak.css">
-        <meta charset="utf-8">
-        
-    </head>
-    <body>
-        <br>
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="binairstelsel.html">binairstelsel</a></li>
-            <li><a href="kleurmodel.html">kleurmodel</a></li>
-            <li><a href="3-lagenmodel.html">3-lagenmodel</a></li>
-        </ul>
+<head>
+    <title>Jasperswerkplaats</title>
+    <link rel="stylesheet" type="text/css" href="opmaak.css">
+    <meta charset="utf-8">
+    <style>
+        /* Style the top-level menu items */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
 
-        <p>
-            Deze website is uitleg over code en hoe alles werkt met nullen en enen. binary bonanza is een goede
-            <br>manier om te leren hoe je met nullen en enen moet werken klik 
-            <a href="https://games.penjee.com/binary-bonanza/game.php">hier</a>     
-            om naar de website te gaan.
-        </p>
+        ul > li {
+            display: inline;
+            margin-right: 10px;
+        }
 
-        <img src="binairstelselhome.jpg" width="400" height="200">
-    </body>
+        ul > li > a {
+            text-decoration: none;
+        }
+
+        /* Style the submenu */
+        ul ul {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            padding: 0;
+        }
+
+        ul li:hover ul {
+            display: block;
+        }
+
+        ul ul li {
+            display: block;
+        }
+
+        /* Style the "3-lagenmodel" submenu items */
+        ul ul li a {
+            padding: 5px 10px;
+            display: block;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="binairstelsel.html">Binairstelsel</a>
+            <ul>
+                <li><a href="#">Submenu Item 1</a></li>
+                <li><a href="#">Submenu Item 2</a></li>
+                <li><a href="#">Submenu Item 3</a></li>
+            </ul>
+        </li>
+        <li><a href="kleurmodel.html">Kleurmodel</a></li>
+        <li><a href="3-lagenmodel.html">3-lagenmodel</a>
+            <ul>
+                <li><a href="#">Submenu Item A</a></li>
+                <li><a href="#">Submenu Item B</a></li>
+                <li><a href="#">Submenu Item C</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>
+        Deze website geeft uitleg over code en hoe alles werkt met nullen en enen. Binary Bonanza is een goede
+        <br>manier om te leren hoe je met nullen en enen moet werken. Klik
+        <a href="https://games.penjee.com/binary-bonanza/game.php">hier</a>     
+        om naar de website te gaan.
+    </p>
+
+    <img src="binairstelselhome.jpg" width="400" height="200">
+</body>
 </html>
