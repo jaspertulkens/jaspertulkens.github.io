@@ -1,39 +1,45 @@
+/* Style the top-level menu items */
 ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
-    overflow: hidden;
-    background-color:aqua;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+}
+
+ul > li {
+    display: inline;
+    margin-right: 10px;
+    position: relative;
+}
+
+ul > li > a {
     text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-
-
-body {
-    background-color: bisque;
+    color: black; /* Set text color for top-level menu items */
 }
 
-p {
-
-    background-color: white;
+/* Style the submenu */
+ul ul {
+    display: none;
+    position: absolute;
+    background-color: aqua;
+    padding: 0;
 }
+
+ul li:hover ul {
+    display: block;
+}
+
+ul ul li {
+    display: block;
+}
+
+/* Style submenu items */
 ul ul li a {
     padding: 5px 10px;
     display: block;
-    color: white; /* Change text color to white */
-    background-color: aqua; /* Change background color to aqua */
+    color: white; /* Set text color to white */
+}
+
+/* Change text color and background color on hover */
+ul ul li a:hover {
+    background-color: black; /* Set background color to black on hover */
+    color: white; /* Set text color to white on hover */
 }
