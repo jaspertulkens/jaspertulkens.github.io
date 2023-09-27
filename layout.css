@@ -1,44 +1,82 @@
-.second-level-menu > li
-{
-    position: relative;
-    height: 30px;
-    background: aqua;
-}
-.second-level-menu > li:hover { background: aqua; }
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Menu</title>
+    <style>
+        /* Reset default list styles */
+        ul, li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-.top-level-menu
-{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+        /* Top-level menu styles */
+        .top-level-menu > li {
+            position: relative;
+            float: left;
+            height: 30px;
+            width: 150px;
+            background: aqua;
+        }
 
-.top-level-menu > li
-{
-    position: relative;
-    float: left;
-    height: 30px;
-    width: 150px;
-    background: aqua;
-}
-.top-level-menu > li:hover { background: aqua; }
+        /* Change top-level menu item background on hover */
+        .top-level-menu > li:hover {
+            background: lightblue;
+        }
 
-.top-level-menu li:hover > ul
-{
-    display: inline;
-}
+        /* Submenu styles */
+        .second-level-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: aqua;
+        }
 
+        /* Change submenu background on hover */
+        .top-level-menu > li:hover .second-level-menu {
+            display: block;
+        }
 
+        /* Submenu item styles */
+        .second-level-menu > li {
+            height: 30px;
+        }
 
+        /* Change submenu item background on hover */
+        .second-level-menu > li:hover {
+            background: lightblue;
+        }
 
-.top-level-menu a
-{
-    font: bold 14px Arial, Helvetica, sans-serif;
-    color: black;
-    text-decoration: none;
-    padding: 0 0 0 10px;
+        /* Anchor link styles */
+        .top-level-menu a {
+            font: bold 14px Arial, Helvetica, sans-serif;
+            color: black;
+            text-decoration: none;
+            padding: 0 0 0 10px;
+            display: block;
+            line-height: 30px;
+        }
 
-    display: block;
-    line-height: 30px;
-}
-.top-level-menu a:hover { color: white; }
+        /* Change link color on hover */
+        .top-level-menu a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="top-level-menu">
+    <li><a href="/index.html">Home</a></li>
+    <li>
+        <a href="#">3-lagenmodel</a>
+        <ul class="second-level-menu">
+            <li><a href="#">Toepassingenlaag</a></li>
+            <li><a href="#">Logische laag</a></li>
+            <li><a href="#">Fysieke laag</a></li>
+        </ul>
+    </li>
+</ul>
+
+</body>
+</html>
