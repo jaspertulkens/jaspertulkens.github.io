@@ -10,33 +10,53 @@
     float: left;
     height: 30px;
     width: 150px;
-    background: aqua;
+    background: aqua; /* Aqua background color for top-level menu */
 }
 
-.top-level-menu > li:hover { background: aqua; }
+.top-level-menu > li:hover {
+    background: black; /* Black background color on hover for top-level menu */
+}
 
-.top-level-menu li:hover > ul
-{
+.top-level-menu li:hover > ul {
     display: inline;
 }
 
-.top-level-menu a
-{
+.top-level-menu a {
     font: bold 14px Arial, Helvetica, sans-serif;
-    color: black;
+    color: white; /* White text color for top-level menu */
     text-decoration: none;
     padding: 0 0 0 10px;
     display: block;
     line-height: 30px;
 }
 
-.top-level-menu a:hover { color: white; }
-
-.second-level-menu > li
-{
-    position: relative;
-    height: 30px;
-    background: aqua;
+.top-level-menu a:hover {
+    color: white; /* White text color on hover for top-level menu */
 }
 
-.second-level-menu > li:hover { background: aqua; }
+.second-level-menu > li {
+    position: relative;
+    height: 30px;
+    background: aqua; /* Aqua background color for second-level menu */
+}
+
+.second-level-menu > li:hover {
+    background: black; /* Black background color on hover for second-level menu */
+}
+
+.second-level-menu > li:hover > ul {
+    display: inline;
+}
+
+.second-level-menu > li > a {
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: white; /* White text color for second-level menu */
+    text-decoration: none;
+    padding: 0 0 0 10px;
+    display: block;
+    line-height: 30px;
+}
+
+.second-level-menu > li > a:hover {
+    color: white; /* White text color on hover for second-level menu */
+}
