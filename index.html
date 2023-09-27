@@ -14,10 +14,12 @@
         ul > li {
             display: inline;
             margin-right: 10px;
+            position: relative;
         }
 
         ul > li > a {
             text-decoration: none;
+            color: black; /* Set text color for top-level menu items */
         }
 
         /* Style the submenu */
@@ -43,7 +45,7 @@
             color: white; /* Set text color to white */
         }
 
-        /* Change text color and background color on hover */
+        /* Change text color on hover */
         ul ul li a:hover {
             background-color: black; /* Set background color to black on hover */
             color: white; /* Set text color to white on hover */
@@ -53,10 +55,16 @@
 <body>
     <br>
     <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="binairstelsel.html">binairstelsel</a></li>
-        <li><a href="kleurmodel.html">kleurmodel</a></li>
-        <li><a href="3-lagenmodel.html">3-lagenmodel</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="binairstelsel.html">Binairstelsel</a></li>
+        <li><a href="kleurmodel.html">Kleurmodel</a></li>
+        <li><a href="3-lagenmodel.html">3-lagenmodel</a>
+            <ul>
+                <li><a href="#">Toepassingenlaag</a></li>
+                <li><a href="#">Logische laag</a></li>
+                <li><a href="#">Fysieke laag</a></li>
+            </ul>
+        </li>
     </ul>
 
     <p>
