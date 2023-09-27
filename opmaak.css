@@ -1,45 +1,42 @@
 /* Style the top-level menu items */
-ul {
+.top-level-menu {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-ul > li {
-    display: inline;
-    margin-right: 10px;
+.top-level-menu > li {
     position: relative;
+    float: left;
+    height: 30px;
+    width: 150px;
+    background: aqua;
 }
 
-ul > li > a {
+.top-level-menu > li:hover { background: aqua; }
+
+.top-level-menu li:hover > ul
+{
+    display: inline;
+}
+
+.top-level-menu a
+{
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: black;
     text-decoration: none;
-    color: black; /* Set text color for top-level menu items */
-}
-
-/* Style the submenu */
-ul ul {
-    display: none;
-    position: absolute;
-    background-color: aqua;
-    padding: 0;
-}
-
-ul li:hover ul {
+    padding: 0 0 0 10px;
     display: block;
+    line-height: 30px;
 }
 
-ul ul li {
-    display: block;
+.top-level-menu a:hover { color: white; }
+
+.second-level-menu > li
+{
+    position: relative;
+    height: 30px;
+    background: aqua;
 }
 
-/* Style submenu items */
-ul ul li a {
-    padding: 5px 10px;
-    display: block;
-    color: white; /* Set text color to white */
-}
-
-/* Change text color and background color on hover */
-ul ul li a:hover {
-    background-color: black; /* Set background color to black on hover */
-    color: white; /* Set text color to white on hover */
-}
+.second-level-menu > li:hover { background: aqua; }
