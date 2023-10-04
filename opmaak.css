@@ -1,5 +1,5 @@
 body {
-    background-color: pink;
+    background-color: beige;
 }
 /* Style the top-level menu items */
 .top-level-menu {
@@ -50,7 +50,7 @@ body {
     list-style: none;
     height: 30px;
     width: auto;
-    background: green; /* Aqua background color for second-level menu */
+    background: aqua; /* Aqua background color for second-level menu */
 }
 
 .second-level-menu > a:hover {
