@@ -6,6 +6,8 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: red;
+    color: white;
 }
 
 .top-level-menu > li {
@@ -13,7 +15,8 @@ body {
     float: left;
     height: 30px;
     width: 150px;
-    background: aqua; /* Aqua background color for top-level menu */
+    /* background: aqua; */
+    /* Aqua background color for top-level menu */
 }
 
 .top-level-menu > li:hover {
