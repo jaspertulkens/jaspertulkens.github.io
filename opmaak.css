@@ -6,8 +6,6 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: red;
-    color: white;
     display: block;
 }
 
@@ -62,6 +60,7 @@ body {
     padding: 0 0 0 10px;
     display: block;
     line-height: 30px;
+    background: aqua;
 }
 
 .second-level-menu > li > a:hover {
