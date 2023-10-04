@@ -39,13 +39,19 @@ body {
     color: white; /* White text color on hover for top-level menu */
 }
 
+.top-level-menu > li:hover > ul {
+    display: block;
+}
+
 .second-level-menu {
     dispay: none;
 }
 
 .second-level-menu > li {
     position: relative;
+    list-style: none;
     height: 30px;
+    width: auto;
     background: aqua; /* Aqua background color for second-level menu */
 }
 
