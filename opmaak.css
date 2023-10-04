@@ -39,6 +39,10 @@ body {
     color: white; /* White text color on hover for top-level menu */
 }
 
+.second-level-menu {
+    dispay: none;
+}
+
 .second-level-menu > li {
     position: relative;
     height: 30px;
