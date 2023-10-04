@@ -53,7 +53,7 @@ body {
     background: aqua; /* Aqua background color for second-level menu */
 }
 
-.second-level-menu > li:hover {
+.second-level-menu > a:hover {
     background: black; /* Black background color on hover for second-level menu */
 }
 
