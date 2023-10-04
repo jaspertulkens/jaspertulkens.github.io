@@ -42,31 +42,32 @@ body {
 }
 
 .second-level-menu {
+    list-style: none;
     dispay: none;
 }
 
 .second-level-menu > li {
-    position: relative;
     list-style: none;
     height: 30px;
     width: auto;
-    background: aqua; /* Aqua background color for second-level menu */
+    background: green; /* Aqua background color for second-level menu */
 }
 
 .second-level-menu > a:hover {
     background: black; /* Black background color on hover for second-level menu */
 }
 
+/*
 .second-level-menu > li:hover > ul {
     display: inline;
 }
+*/
 
 .second-level-menu > li > a {
     font: bold 14px Arial, Helvetica, sans-serif;
     color: white; /* White text color for second-level menu */
     text-decoration: none;
     padding: 0 0 0 10px;
-    display: block;
     line-height: 30px;
     background: aqua;
 }
