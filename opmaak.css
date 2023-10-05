@@ -9,7 +9,7 @@ ul {
     overflow: auto;
 }
 
-.top-level-menu li {
+.top-level-menu > li {
     background: aqua;
     float: left;
 }
