@@ -13,7 +13,7 @@ body {
     position: relative;
     float: left;
     height: 30px;
-    min-width: 150px;
+    width: 150px;
     background: aqua; 
 }
 
@@ -25,7 +25,7 @@ body {
     display: block;
     border: 2px solid red;
 }
-/*
+
 .top-level-menu a {
     font: bold 14px Arial, Helvetica, sans-serif;
     color: white;
@@ -35,10 +35,12 @@ body {
     line-height: 30px;
 }
 
+/*
 .top-level-menu a:hover {
     color: white;
 }
-
+*/
+/*
 .second-level-menu {
     list-style: none;
 }
