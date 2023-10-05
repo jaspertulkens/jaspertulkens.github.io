@@ -9,7 +9,7 @@ ul {
     overflow: auto;
 }
 
-.top-level-menu > li {
+.top-level-menu li {
     background: aqua;
     float: left;
 }
@@ -21,6 +21,11 @@ ul {
     line-height: 30px;
     padding: 0 10px;
 }
+
+.top-level-menu li:hover ul {
+    border: 2px solid red;
+}
+
 
 /*
 .top-level-menu {
