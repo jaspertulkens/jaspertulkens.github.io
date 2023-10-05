@@ -40,37 +40,39 @@ body {
 .top-level-menu a:hover {
     color: white; /* White text color on hover for top-level menu */
 }
-
+/*
 .second-level-menu {
     list-style: none;
     dispay: none;
 }
-
+*/
+/*
 .second-level-menu > li {
     list-style: none;
     height: 30px;
     width: auto;
     background: aqua; /* Aqua background color for second-level menu */
-}
-
+/*} */
+/*
 .second-level-menu > a:hover {
     background: black; /* Black background color on hover for second-level menu */
-}
-
+/*}
+*/
 /*
 .second-level-menu > li:hover > ul {
     display: inline;
 }
 */
-
+/*
 .second-level-menu > li > a {
     font: bold 14px Arial, Helvetica, sans-serif;
     color: white; /* White text color for second-level menu */
+/*
     text-decoration: none;
     padding: 0 0 0 10px;
     line-height: 30px;
     background: aqua;
-}
+}*/
 
 .second-level-menu > li > a:hover {
     color: white; /* White text color on hover for second-level menu */
