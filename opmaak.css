@@ -14,6 +14,13 @@ ul {
     float: left;
 }
 
+.top-level-menu a {
+    color: white;
+    font: bold 14px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 30px
+}
+
 /*
 .top-level-menu {
     list-style: none;
