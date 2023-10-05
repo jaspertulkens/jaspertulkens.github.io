@@ -9,6 +9,7 @@ body {
     overflow: auto;
 }
 
+/*
 .top-level-menu > li {
     position: relative;
     float: left;
@@ -34,7 +35,7 @@ body {
     display: block;
     line-height: 30px;
 }
-
+*/
 /*
 .top-level-menu a:hover {
     color: white;
