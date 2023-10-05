@@ -41,7 +41,7 @@ body {
     color: white; /* White text color on hover for top-level menu */
 }
 
-. {
+.second-level-menu {
     list-style: none;
     dispay: none;
 }
