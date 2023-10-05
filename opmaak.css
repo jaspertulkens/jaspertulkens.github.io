@@ -2,11 +2,6 @@ body {
     background-color: green;
 }
 
-li {
-    border: 2px solid black;
-}
-
-/*
 .top-level-menu {
     list-style: none;
     padding: 0;
@@ -18,7 +13,7 @@ li {
     position: relative;
     float: left;
     height: 30px;
-    width: 150px;
+    min-width: 150px;
     background: aqua; 
 }
 
@@ -30,8 +25,7 @@ li {
     display: block;
     border: 2px solid red;
 }
-
-
+/*
 .top-level-menu a {
     font: bold 14px Arial, Helvetica, sans-serif;
     color: white;
